@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://World/Level2BG.png" type="Texture" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/HealthBar.tscn" type="PackedScene" id=4]
+
+[node name="Cave" type="Node2D"]
+
+[node name="Backround" type="Sprite" parent="."]
+position = Vector2( -816, -120 )
+texture = ExtResource( 1 )
+offset = Vector2( 848, 152 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 1216, 592 )
+
+[node name="Bat" parent="." instance=ExtResource( 3 )]
+position = Vector2( 208, 64 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 288, 24 )
+current = true
+smoothing_enabled = true
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 288, 24 )
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthBar" parent="CanvasLayer" instance=ExtResource( 4 )]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 72.0
+margin_bottom = 24.0
