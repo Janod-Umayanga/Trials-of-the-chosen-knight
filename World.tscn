@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://World/Entrance.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://UI/HealthBar.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Enemies/Ghost.tscn" type="PackedScene" id=9]
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=10]
+[ext_resource path="res://NPCs/Guardian.tscn" type="PackedScene" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -619,6 +620,9 @@ position = Vector2( 96, 48 )
 
 [node name="Ghost" parent="Ysort/Enemies" instance=ExtResource( 9 )]
 position = Vector2( 240, 104 )
+
+[node name="Guardian" parent="Ysort" instance=ExtResource( 11 )]
+position = Vector2( -59, 47 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
