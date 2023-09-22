@@ -52,7 +52,7 @@ tracks/2/keys = {
 "values": [ false, true ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("P:frame")
+tracks/3/path = NodePath("Knight:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -106,7 +106,7 @@ tracks/2/keys = {
 "values": [ false, true ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("P:frame")
+tracks/3/path = NodePath("Knight:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -160,7 +160,7 @@ tracks/2/keys = {
 "values": [ false, true ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("P:frame")
+tracks/3/path = NodePath("Knight:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -214,7 +214,7 @@ tracks/2/keys = {
 "values": [ false, true ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("P:frame")
+tracks/3/path = NodePath("Knight:frame")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -243,7 +243,7 @@ tracks/0/keys = {
 "values": [ true ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("P:frame")
+tracks/1/path = NodePath("Knight:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -260,7 +260,7 @@ resource_name = "IdleLeft"
 length = 0.1
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("P:frame")
+tracks/0/path = NodePath("Knight:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -277,7 +277,7 @@ resource_name = "IdleRight"
 length = 0.1
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("P:frame")
+tracks/0/path = NodePath("Knight:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -294,7 +294,7 @@ resource_name = "IdleUp"
 length = 0.1
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("P:frame")
+tracks/0/path = NodePath("Knight:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -333,7 +333,7 @@ tracks/1/keys = {
 "values": [ false ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("P:frame")
+tracks/2/path = NodePath("Knight:frame")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -363,7 +363,7 @@ tracks/0/keys = {
 } ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("P:frame")
+tracks/1/path = NodePath("Knight:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -393,7 +393,7 @@ tracks/0/keys = {
 } ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("P:frame")
+tracks/1/path = NodePath("Knight:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -423,7 +423,7 @@ tracks/0/keys = {
 } ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("P:frame")
+tracks/1/path = NodePath("Knight:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -453,7 +453,7 @@ tracks/0/keys = {
 } ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("P:frame")
+tracks/1/path = NodePath("Knight:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -470,7 +470,7 @@ resource_name = "RunDown"
 length = 0.8
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("P:frame")
+tracks/0/path = NodePath("Knight:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -487,7 +487,7 @@ resource_name = "RunLeft"
 length = 0.8
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("P:frame")
+tracks/0/path = NodePath("Knight:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -504,7 +504,7 @@ resource_name = "RunRight"
 length = 0.8
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("P:frame")
+tracks/0/path = NodePath("Knight:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -521,7 +521,7 @@ resource_name = "RunUp"
 length = 0.8
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("P:frame")
+tracks/0/path = NodePath("Knight:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -672,7 +672,7 @@ height = 2.0
 collision_layer = 2
 script = ExtResource( 1 )
 
-[node name="P" type="Sprite" parent="."]
+[node name="Knight" type="Sprite" parent="."]
 position = Vector2( 0, -10 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 6 )

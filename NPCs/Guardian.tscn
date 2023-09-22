@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://NPCs/Guardian.png" type="Texture" id=1]
+[ext_resource path="res://NPCs/Guardian.gd" type="Script" id=2]
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
@@ -26,16 +27,39 @@ animations = [ {
 radius = 4.0
 height = 0.0
 
+[sub_resource type="CapsuleShape2D" id=6]
+height = 0.0
+
 [node name="Guardian" type="KinematicBody2D"]
 position = Vector2( 2, -11 )
+collision_mask = 2
+script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -4 )
 scale = Vector2( 0.0311279, 0.0311279 )
 frames = SubResource( 1 )
 animation = "Idle"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -2, 5 )
 shape = SubResource( 5 )
+
+[node name="TalkRange" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TalkRange"]
+position = Vector2( -2, 20 )
+shape = SubResource( 6 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = -13.0
+margin_top = -21.0
+margin_right = 279.0
+margin_bottom = -3.0
+rect_scale = Vector2( 0.25, 0.25 )
+text = "Press F to talk"
+
+[connection signal="body_entered" from="TalkRange" to="." method="_on_TalkRange_body_entered"]
+[connection signal="body_exited" from="TalkRange" to="." method="_on_TalkRange_body_exited"]
