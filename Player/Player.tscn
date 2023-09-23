@@ -732,6 +732,8 @@ collision_layer = 4
 position = Vector2( 0, -7 )
 shape = SubResource( 50 )
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 
 [editable path="HitboxPivot/SwordHitbox"]
