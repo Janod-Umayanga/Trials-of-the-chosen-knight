@@ -13,6 +13,9 @@ margin_top = 64.0
 margin_right = 196.0
 margin_bottom = 82.0
 text = "You Died"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Menu" type="Button" parent="CanvasLayer"]
 margin_left = 132.0
@@ -21,6 +24,9 @@ margin_right = 230.0
 margin_bottom = 126.0
 rect_scale = Vector2( 0.5, 0.5 )
 text = "Main Menu"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Play" type="Button" parent="CanvasLayer"]
 margin_left = 132.0
@@ -29,6 +35,9 @@ margin_right = 230.0
 margin_bottom = 107.0
 rect_scale = Vector2( 0.5, 0.5 )
 text = "Play Again"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [connection signal="pressed" from="CanvasLayer/Menu" to="." method="_on_Menu_pressed"]
 [connection signal="pressed" from="CanvasLayer/Play" to="." method="_on_Play_pressed"]

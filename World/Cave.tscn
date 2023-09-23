@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://World/Level2BG.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://World/Entrance.tscn" type="PackedScene" id=6]
 [ext_resource path="res://World/Door.tscn" type="PackedScene" id=7]
 [ext_resource path="res://World/Rock.tscn" type="PackedScene" id=8]
+[ext_resource path="res://World/Grass.tscn" type="PackedScene" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=52]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -384,13 +385,25 @@ position = Vector2( 348, -11 )
 [node name="Rock" parent="YSort/Rocks" instance=ExtResource( 8 )]
 position = Vector2( -77, 79 )
 
-[node name="Rocks2" type="YSort" parent="YSort"]
-
-[node name="Rock" parent="YSort/Rocks2" instance=ExtResource( 8 )]
+[node name="Rock2" parent="YSort/Rocks" instance=ExtResource( 8 )]
 position = Vector2( 143, 151 )
 
-[node name="Rock2" parent="YSort/Rocks2" instance=ExtResource( 8 )]
+[node name="Rock3" parent="YSort/Rocks" instance=ExtResource( 8 )]
 position = Vector2( 274, -1 )
+
+[node name="Grass" type="YSort" parent="YSort"]
+
+[node name="Grass" parent="YSort/Grass" instance=ExtResource( 9 )]
+position = Vector2( 177, 2 )
+
+[node name="Grass2" parent="YSort/Grass" instance=ExtResource( 9 )]
+position = Vector2( 364, -93 )
+
+[node name="Grass4" parent="YSort/Grass" instance=ExtResource( 9 )]
+position = Vector2( 367, 110 )
+
+[node name="Grass3" parent="YSort/Grass" instance=ExtResource( 9 )]
+position = Vector2( -60, -50 )
 
 [node name="Entrance" parent="." instance=ExtResource( 6 )]
 position = Vector2( -131, 189 )

@@ -38,7 +38,6 @@ position = Vector2( 0, -4 )
 scale = Vector2( 0.0311279, 0.0311279 )
 frames = SubResource( 5 )
 animation = "Idle"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -54,7 +53,7 @@ shape = SubResource( 7 )
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = -13.0
 margin_top = -21.0
-margin_right = 279.0
+margin_right = 551.0
 margin_bottom = -3.0
 rect_scale = Vector2( 0.25, 0.25 )
 text = "Press F to talk"

@@ -464,7 +464,7 @@ position = Vector2( -64, -96 )
 position = Vector2( -136, 192 )
 
 [node name="Tree2" parent="Ysort/Trees" instance=ExtResource( 10 )]
-position = Vector2( -40, 88 )
+position = Vector2( -40, 95 )
 
 [node name="Tree3" parent="Ysort/Trees" instance=ExtResource( 10 )]
 position = Vector2( 208, 32 )
