@@ -380,6 +380,10 @@ tile_data = PoolIntArray( -196613, 0, 0, -196612, 0, 1, -196611, 0, 5, -196610, 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( -114, 126 )
 current = true
+limit_left = -160
+limit_top = -140
+limit_right = 420
+limit_bottom = 225
 smoothing_enabled = true
 
 [node name="Entrance" parent="." instance=ExtResource( 1 )]
@@ -398,16 +402,16 @@ remote_path = NodePath("../../../Camera2D")
 [node name="Grass" type="YSort" parent="Ysort"]
 
 [node name="Grass2" parent="Ysort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 64, 176 )
+position = Vector2( 210, 177 )
 
 [node name="Grass3" parent="Ysort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 80, 176 )
+position = Vector2( 226, 177 )
 
 [node name="Grass4" parent="Ysort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 96, 176 )
+position = Vector2( 242, 177 )
 
 [node name="Grass5" parent="Ysort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 112, 176 )
+position = Vector2( 258, 177 )
 
 [node name="Grass6" parent="Ysort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 136, 112 )
@@ -477,13 +481,13 @@ position = Vector2( 336, 144 )
 position = Vector2( 240, 104 )
 
 [node name="Ghost2" parent="Ysort/Enemies" instance=ExtResource( 9 )]
-position = Vector2( 99, 12 )
+position = Vector2( 166, -78 )
 
 [node name="Ghost3" parent="Ysort/Enemies" instance=ExtResource( 9 )]
 position = Vector2( 329, -62 )
 
 [node name="Ghost4" parent="Ysort/Enemies" instance=ExtResource( 9 )]
-position = Vector2( 63, 157 )
+position = Vector2( 191, 174 )
 
 [node name="Ghost5" parent="Ysort/Enemies" instance=ExtResource( 9 )]
 position = Vector2( -37, -46 )

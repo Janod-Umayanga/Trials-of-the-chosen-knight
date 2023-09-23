@@ -487,6 +487,10 @@ position = Vector2( 125, 202 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 117, 144 )
 current = true
+limit_left = -160
+limit_top = -130
+limit_right = 420
+limit_bottom = 225
 smoothing_enabled = true
 
 [node name="YSort" type="YSort" parent="."]
