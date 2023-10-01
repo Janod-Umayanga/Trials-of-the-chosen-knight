@@ -14,7 +14,7 @@ const dialogArray = [
 	"'Tis a gift or a course, that I do not know",
 	"However, now you have no choice",
 	"Except to dwell within this great power",
-	"I knew 'twas a right decision to chose you for this task",
+	"I knew 'twas a right decision to choose you for this task",
 	"Farewell, chosen knight!",
 	""
 ]
